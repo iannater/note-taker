@@ -35,7 +35,7 @@ const deleteNote = (id) => {
 // If there is an activeNote, display it, otherwise render empty inputs
 const renderActiveNote = () => {
   $saveNoteBtn.hide();
-
+console.log('val', activeNote.text)
   if (activeNote.id) {
     $noteTitle.attr("readonly", true);
     $noteText.attr("readonly", true);
@@ -81,6 +81,7 @@ const handleNoteDelete = function (event) {
 
 // Sets the activeNote and displays it
 const handleNoteView = function () {
+  console.log('display')
   activeNote = $(this).data();
   renderActiveNote();
 };
@@ -104,8 +105,8 @@ const handleRenderSaveBtn = function () {
 // Render's the list of note titles
 const renderNoteList = (notes) => {
   $noteList.empty();
-
-  const noteListItems = [];
+  console.log(notes)
+    const noteListItems = [];
 
   // Returns jquery object for li with given text and delete button
   // unless withDeleteButton argument is provided as false
