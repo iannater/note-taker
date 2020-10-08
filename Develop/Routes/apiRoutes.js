@@ -22,9 +22,14 @@ router.post("/notes", (req,res) =>{
 })
 
 
-  router.delete("/notes/:id", (req, res) => {
-    console.log(req.params.id)
+router.delete("/notes/:id", (req, res) => {
+    let deleteNoteID = req.params.id;
+    console.log(deleteNoteID);
+    let data = fs.readFileSync("db/db.json", "utf8")
+    console.log(data)
+    let notes = JSON.parse(data)
+    const filteredNote = notes.filter(values => values.id != deleteNoteID);
+    fs.writeFileSync("db/db.json", JSON.stringify(filteredNote));
 });
-
 
 module.exports = router;
