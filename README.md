@@ -23,8 +23,8 @@
   4. Create note
   5. Fill out a note and save it to the db file in the top right.
 
-  [![NODE.js Team Generator Walkthrough](Develop/public/assets/img/notes.png)](https://drive.google.com/file/d/1sVVeY9c1HVlgHS5AwXTdsi-uCX3yAEg0/view)
-  
+  [![NODE.js Note Taker](./Develop/public/assets/img/note.png)](https://drive.google.com/file/d/1sVVeY9c1HVlgHS5AwXTdsi-uCX3yAEg0/view)
+
 
   ## License
   [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
